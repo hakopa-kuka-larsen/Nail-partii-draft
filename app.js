@@ -38,12 +38,16 @@ collapse.forEach(link => {
 
 // write a random number generator, look online.
 numGen = Math.floor(Math.random() * 360) + 1; 
-    let getNumGen =  numGen;
     console.log(numGen)
 
 // get all list style elements (bulletpoints(stars))
 
-const allStars = document.getElementById("#pink__star");
+const allStars = document.querySelectorAll(".pink__star");
+    allStars.forEach(star => {
+        star.style.transform = "rotate(${numGen}deg "
+    });
+
+
 
 
 
