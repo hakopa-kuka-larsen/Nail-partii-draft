@@ -1,0 +1,92 @@
+body {
+    background: #FFF;
+    font-family: Arial, sans-serif;
+}
+
+.instagram-media {
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+    margin: 1px;
+    max-width: 540px;
+    min-width: 326px;
+    width: 99.375%;
+}
+
+.instagram-container {
+    padding: 16px;
+}
+
+.instagram-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-pic {
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 14px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.profile-name,
+.profile-handle {
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    height: 14px;
+}
+
+.profile-name {
+    margin-bottom: 6px;
+    width: 100px;
+}
+
+.profile-handle {
+    width: 60px;
+}
+
+.instagram-placeholder {
+    padding: 19% 0;
+}
+
+.instagram-icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 12px;
+    background: url('instagram-icon.svg') no-repeat center;
+    background-size: contain;
+}
+
+.instagram-caption {
+    background-color: #F4F4F4;
+    border-radius: 4px;
+    height: 14px;
+    margin-bottom: 6px;
+    width: 224px;
+}
+
+.instagram-credit {
+    color: #c9c8cd;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 8px 0;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.instagram-credit a {
+    color: #c9c8cd;
+    text-decoration: none;
+}
