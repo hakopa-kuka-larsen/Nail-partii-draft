@@ -118,8 +118,8 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        /* top: -1000px;
-        opacity: 0;    !!!!!!!!!!    */
+        top: -1000px;
+        opacity: 0;   
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
@@ -140,13 +140,13 @@
         padding-left: 25px;
     }
 
-    .navbar__toggle.bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff; 
-    }
+   .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+  }
 
     .navbar__item {
         width: 100%; 
@@ -173,8 +173,31 @@
     .button {
         display: flex;
         justify-content: center;
-
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
     }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(10px) translateX(-10px) rotate(-450deg);
+        
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        transform: translateY(2px) rotate(-450deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-6px) translateX(+10px) rotate(-450deg);
+    }
+
+
 }
 
 
