@@ -5,6 +5,13 @@
     font-family: "roboto", sans-serif;
 }
 
+body { 
+    /* cursor: url('images/pink-pointers/Pink Pointers - Move.cur'), grab; */
+    cursor: url('images/pink-pointers/Pink\ Cursors\ -\ Normal\ Select.cur'), pointer; 
+    
+
+}
+
 .nail__logo{
     display: flex;
     max-width: 1300px;

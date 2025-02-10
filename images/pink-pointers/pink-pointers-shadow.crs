@@ -1,0 +1,27 @@
+﻿[Arrow]
+Path=Pink Cursors - Normal Select.cur
+
+[AppStarting]
+Path=Pink Cursors - Working.ani
+
+[Wait]
+Path=Pink  Cursors - Busy.ani
+
+[Hand]
+Path=Pink Cursors - Link Select.cur
+
+[IBeam]
+Path=Pink Cursors - Text Select.cur
+
+[SizeWE]
+Path=Pink Pointers - Horizontal Resize.cur
+
+[SizeNS]
+Path=Pink Pointers - Vertical Resize.cur
+
+[SizeAll]
+Path=Pink Pointers - Move.cur
+
+[Help]
+Path=Pink Pointers - Help Select.cur
+
