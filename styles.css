@@ -5,7 +5,7 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
-.nabar {
+.navbar {
     background: #131313;
     height: 80px;
     display: flex;      
@@ -13,8 +13,27 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top: o;
+    top: 0;
     z-index: 999;
-    
+}
 
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height:80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px; /* max web view*/
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size:100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-colorL: transparent;
 }
