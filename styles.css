@@ -210,9 +210,9 @@ body {
     }
 
    .navbar__toggle .bar {
-    width: 25px;
+    width: 30px;
     height: 5px;
-    margin: 5px auto;
+    margin: 6px auto;
     transition: all .7s ease-in-out;
     background: #fdfae6;
   }
@@ -265,22 +265,16 @@ body {
     }
 
     #mobile-menu.is-active .bar:nth-child(2){
-        transform: translateY(0px) rotate(-450deg);
+        transform: translateY(-1px) rotate(-450deg);
         
     }
 
     #mobile-menu.is-active .bar:nth-child(3){
-        transform: translateY(-10px) translateX(+10px) rotate(-450deg);
+        transform: translateY(-12px) translateX(+10px) rotate(-450deg);
         
     }
 
-    .container {
-        grid-template-columns: 1fr;
-      }
-
-    .grid__2 {
-        display: none;
-      }
+    
 
 
 }
@@ -311,10 +305,36 @@ body {
 
 .grid__2 {
     grid-column: 2;
+    
+}
+
+.grid__2__container{
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    margin: 0;
+    height: 100vh;
+   
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+   
+}
+
+.grid__2__img {
+    width: 100%;
+    padding: 40px;
+    border-radius: 50px;
+    position: relative;
+    top: 30px;
+}
+
+.center {
+    justify-content: center;
 }
 
 .main__content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     background-color: #92928a;
     background-image: linear-gradient(to top, #040404 0%, #fdfae6 100%);
     background-size: 100%;
@@ -388,8 +408,7 @@ body {
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    
 }
 
 /* BOOKING SECTION */
@@ -471,8 +490,9 @@ color: #040404;
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
+        font-size:6rem;
         margin-top: 2rem;
+        text-justify: center;
     }
 
     .main_content h2 {
@@ -483,12 +503,26 @@ color: #040404;
         margin-top: 1rem;
         font-size: 1.5rem;
     }
+
+    .main__container {
+        grid-template-columns: 1fr;
+      }
+
+    .grid__2 {
+        display: none;
+      }
+    
+    .grid__2__container {
+        display: none;
+    }
 }
+
+
 
 @media screen and (max-width: 480px) {
     
     .main__content h1 {
-        font-size: 2rem;
+        font-size: 5rem;
         margin-top: 3rem;
     }
 

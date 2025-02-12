@@ -8,8 +8,8 @@
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
-    
-    <nav class="navbar">
+    <div id="home"></div>
+    <nav class="navbar" >
         
         <div class="navbar__container">
             
@@ -22,13 +22,13 @@
 
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links"> HOME </a>
+                    <a href="#home" class="navbar__links"> HOME </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__links"> SETS </a>
+                    <a href="#gallery" class="navbar__links"> GALLERY </a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links"> POLICIES </a>
+                    <a href="#about" class="navbar__links"> POLICIES </a>
                 </li>
                 <li class="navbar__item">
                     <a href="#booking" class="navbar__links"> BOOK NOW </a>
@@ -117,22 +117,33 @@
                 </div>
             </div>
             <!-- Optional grid-column 2 for larger view ports -->
-            <h1 class="grid__2">TEST</h1>
+            
+            <div class="grid__2__container">
+                <div class="grid__2">
+                    <img src="images/group.jpg" class="grid__2__img">
+                </div>
+            </div>
+            <!-- grid 2 end -->
         </div>
+        
     </div>
+      <!-- Gallery -->
+    <h1>gallery</h1>
+    <div id="gallery" class="main__container"></div>
 
 
 
 
 
-    <!-- Gallery -->
+
+  
 
 
 
 
 
     <!-- FOOTER SECTIOn -->
-    <div class="footer__container">
+    <div id="about" class="footer__container">
         <div class="footer__links">
             <div class="footer__link--wrapper">
                 <div class="footer__link--items">
