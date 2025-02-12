@@ -1,6 +1,20 @@
+//            ______
+// 　　　　　 /  ＞　　 フ 
+// 　　　　　| 　 _　 _ l    
+// 　 　　　／` ミ ＿ xノ  
+// 　　 　 /　　　 o |
+// 　　　 /　 ヽ　　 ﾉ
+// 　 　 │　　|　|　|
+// 　／￣|　　 |　|　|
+// 　| (￣ヽ＿_ヽ_)__)
+// 　＼二つ
+
+
+// Burger menu //
+
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
-const bars = document.querySelectorAll(".navbar__toggle .bar");
+const bars = document.querySelectorAll(".navbar__toggle .bar");  /**/
 
 menu.addEventListener("click", function () {
     menu.classList.toggle("is-active");
@@ -12,7 +26,7 @@ menu.addEventListener("click", function () {
 
 const collapse = document.querySelectorAll(".navbar__links");
 
-// toggles menu out when navbar__link is clicked
+// this toggles menu out when navbar__link is clicked 
 collapse.forEach(link => {
     link.addEventListener("click", function () {
         menu.classList.remove("is-active"); 
@@ -20,8 +34,22 @@ collapse.forEach(link => {
     });
 });
 
-// let burger = document.getElementById("burger")
+// star rotater //
+
+// write a random number generator, look online.
+numGen = Math.floor(Math.random() * 360) + 1; 
+    let getNumGen =  numGen;
+    console.log(numGen)
+
+// get all list style elements (bulletpoints(stars))
+
+const allStars = document.getElementById("#pink__star");
 
 
 
-// console.log(burger)
+
+
+// for each id  of pink star, apply random number geenerator numbers 1 to 360,
+// to rotate the star
+
+
