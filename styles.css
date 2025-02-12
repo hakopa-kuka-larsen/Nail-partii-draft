@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "roboto", sans-serif;
+    text-decoration: none;
 }
 
 body { 
@@ -293,7 +294,7 @@ body {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
+    padding: 0 15px;
 }
 
 .main__content h1 {
@@ -378,24 +379,61 @@ body {
 /* BOOKING SECTION */
 
 .booking__container {  
+   
+   
 }
-
-.booking__items {
-    justify-content: space-between;
-    display: flex;
+/* ul */
+.booking__table  {
+    
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid  #bcb4ac;
+    border-radius: 4px;
     
 }
+/* li */
+.booking__items {
+    
+    display: flex;
+    border-bottom: 1px solid #64645c;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    list-style: none;
+    
+    
+}
+    
  
 .left {
 
 align-items: center;
 text-align: left;
+
+padding: 0 10px 0 0 ;
  }
+
+.booking__title {
+    font-weight:600;
+    padding: 1px;
+}
  
 .right {
 justify-items: center;
+justify-content: center;
 align-items: center;
+text-align: center;
+width: 100%;
+max-width: 100px;
+border-left: 1px solid #64645c;
+padding: 20px;
+color: #040404;
+
 }
+
 
 
 /* MOBilE RESPONSIVE HERE */
@@ -532,31 +570,11 @@ align-items: center;
     cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
+@media screen and (max-width: 960px) {   
 }
 
 @media screen and (max-width: 480px) {
-    .services {
-        height: 1400px
-    }
 
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card {
-        width: 300px;
-    }
-
-    
 }
 
 /* FOOTERE CSS */
