@@ -1,3 +1,7 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +33,7 @@ body {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    scroll-snap-align: start;
 }
 
 .nail__logo{
@@ -172,6 +177,7 @@ body {
         width: 100%;
         max-width: 1300px;
         padding: 0px;
+        
     }
 
     .navbar {
@@ -283,6 +289,7 @@ body {
 
 .main {
     background-color: #e3e1d6;
+   
 }
 
 .main__container {
@@ -297,6 +304,7 @@ body {
     width: 100%;
     max-width: 1300px;
     padding: 0 15px;
+    scroll-snap-align: start;
 }
 
 .grid__1 {
