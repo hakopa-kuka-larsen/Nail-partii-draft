@@ -1,13 +1,14 @@
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "roboto", sans-serif;
+    font-family: "EB Garamond", sans-serif;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 body { 
@@ -16,6 +17,7 @@ body {
     
 
 }
+
 
 .cover__container {
     display: grid;
@@ -132,6 +134,8 @@ body {
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    text-shadow: 3px 3px 8px #6c6c6c;
+
 }
 
 .navbar__btn {
@@ -445,7 +449,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
-    list-style: none;
+    list-style:url(images/pink_star.png);
     
     
 }
@@ -455,7 +459,6 @@ body {
 
 align-items: center;
 text-align: left;
-
 padding: 0 10px 0 0 ;
  }
 
@@ -474,7 +477,29 @@ max-width: 100px;
 border-left: 1px solid #64645c;
 padding: 20px;
 color: #040404;
+}
 
+.pink__star {
+    width: 30px;
+    height: 30px;
+    z-index: -10;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+transform-origin: center;
+transition: transform 1s ease-out;
+}
+
+
+.pink__star.spin {
+animation: spin 2s ease-out forwards;
+}
+
+@keyframes spin {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(720deg); 
+}
 }
 
 

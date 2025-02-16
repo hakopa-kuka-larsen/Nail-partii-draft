@@ -37,23 +37,24 @@ collapse.forEach(link => {
 // star rotater //
 
 // write a random number generator, look online.
-numGen = Math.floor(Math.random() * 360) + 1; 
-    console.log(numGen)
-
-// get all list style elements (bulletpoints(stars))
-
 const allStars = document.querySelectorAll(".pink__star");
-    allStars.forEach(star => {
-        star.style.transform = "rotate(${numGen}deg "
-    });
 
 
-
-
-
-
+allStars.forEach(star => {
+    let numGen = Math.floor(Math.random() * 360) + 1;  //+1 cause counting frm 0
+    star.dataset.rotation = numGen; // store initial rotation
+    star.style.transform = `rotate(${numGen}deg)`;
+});
 
 // for each id  of pink star, apply random number geenerator numbers 1 to 360,
 // to rotate the star
 
+window.addEventListener("scroll", () => {
 
+    let scrollAmount = window.scrollY / 5; 
+
+    allStars.forEach(star => {
+        let baseRotation = parseInt(star.dataset.rotation); 
+        star.style.transform = `rotate(${baseRotation + scrollAmount}deg)`;
+    });
+});
